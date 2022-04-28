@@ -1,0 +1,142 @@
+body{
+    background-color: #151D3B;
+  }
+  
+  .header{
+    margin-bottom: 10px;
+  }
+  .top{
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .chars{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+  }
+  .char-cards{
+    display:flex;
+    flex-direction:column;
+    width: 150px;
+    height: 250px;
+    background-color:#DADBBD;
+    align-items:center;
+    border-radius: 5px;
+    
+  }
+  .char-cards img{
+    width:90%;
+    height: 100%;
+    margin:10px auto;
+  }
+  
+  .char-cards h3{
+    color:white;
+    position:relative;
+    bottom:10px;
+  }
+  .char-cards .status{
+    
+    padding: 5px 10px;
+    border-radius:5px;
+    position:relative;
+    bottom:10px;
+  }
+  
+  .not-found{
+    color: #D82148;
+    border: 1px solid #D82148;
+  }
+  
+  .found{
+    color: white;
+    border: 1px solid #6EBF8B;
+    background: #6EBF8B;
+  }
+  
+  
+  .img-container{
+      width: 1200px;
+      height: 1200px;
+      margin: auto;
+      position: relative;
+    }
+  img{
+      width:100%;
+    }
+  .hidden {
+      /* The menu is hidden at first */
+      display: none;
+  }
+  .menu{
+    width: 120px;
+    height: 140px;
+    background-color: whitesmoke;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    border:1px solid grey;
+    border-radius:5px;
+    
+    
+  }
+  
+  .absolute {
+    position: absolute;
+  }  
+  
+  
+  #menu li{
+    position: relative;
+    left: -25px;
+    padding: 4px
+  }
+  
+  #menu li:hover{
+    background-color: slategrey;
+    color:white;
+    border-radius:3px;
+  }
+  
+  .target{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    opacity: 0.5;
+    border: 2px solid #FF9E9E;
+  }
+
+  .leaderboard{
+    background-color:#151D3B;
+    width: 300px;
+    height: 300px;
+    display:none;
+    flex-direction:column;
+    color:white;
+    align-items:center;
+    overflow-y: auto; 
+    border-radius:10px;
+    position: absolute;
+    left:0;
+    right:0;
+    top: calc(50vh - 150px);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .item{
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin:0 auto;
+  }
+  
+  .active{
+    display:flex;
+  }
